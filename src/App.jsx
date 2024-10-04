@@ -5,11 +5,7 @@ import Feedback from "./components/App/Feedback/Feedback"
 
 const App = () => {
   const [categories, setCategories] = useState(() => {
-    const parsedCategories = JSON.parse(localStorage.getItem('categories')) ?? {
-	good: 0,
-	neutral: 0,
-	bad: 0
-  }
+    const parsedCategories = JSON.parse(localStorage.getItem('categories')) ?? {good: 0, neutral: 0, bad: 0}
     return parsedCategories;
   })
   
